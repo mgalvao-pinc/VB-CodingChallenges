@@ -19,14 +19,14 @@
             <asp:Label ID="lb_info" runat="server" Text="Enter a positive integer number: "></asp:Label>
         <section>
             <asp:TextBox ID="txt_input" runat="server" Height="30px" Width="80px"></asp:TextBox>
-            <asp:Button ID="btn_generate" runat="server" Text="Generate Spiral" Width="218px" />
+            <asp:Button ID="btn_generate" runat="server" Text="Generate Spiral" Width="220px" />
         </section>
         <br />
         <asp:Label ID="lb_error" runat="server" ForeColor="#FF0066"></asp:Label>
         <br />
 
         <section>
-            <asp:TextBox ID="txt_result" runat="server" Height="350px" ReadOnly="True" TextMode="MultiLine" Width="800px" Font-Names="Consolas" Font-Overline="False" Font-Underline="False">The Spiral will be generated here.</asp:TextBox>
+            <asp:TextBox ID="txt_result" runat="server" Height="500px" Width="1300px" ReadOnly="True" TextMode="MultiLine" Font-Names="Consolas" Font-Overline="False" Font-Underline="False">The Spiral will be generated here.</asp:TextBox>
         </section>
     </main>
 

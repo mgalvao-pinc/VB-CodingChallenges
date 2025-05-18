@@ -11,7 +11,7 @@
             Dim digit As Integer
             digit = value Mod 10
             reversed = (reversed * 10) + digit
-            value /= 10
+            value = Math.Floor(value / 10)
         End While
 
         Return original = reversed
@@ -20,6 +20,7 @@
     Protected Sub btn_check_Click(sender As Object, e As EventArgs) Handles btn_check.Click
         Dim number As Integer
         If Integer.TryParse(txt_input.Text, number) And number >= 0 Then
+            lb_error.Text = ""
             Dim result As Boolean
             result = CheckPalindrome(number)
             If result Then

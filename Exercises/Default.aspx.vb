@@ -67,6 +67,7 @@
         If Not Integer.TryParse(txt_input.Text, maxValue) Or maxValue < 0 Then
             lb_error.Text = "Invalid input. Please enter a positive integer number."
         Else
+            lb_error.Text = ""
             Dim size = Math.Ceiling(Math.Sqrt(maxValue + 1))
             If (size Mod 2 = 0) Then
                 size += 1
